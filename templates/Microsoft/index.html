@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="This suggest you tasty movies in different genre.">
+  <title>Taste A Movie</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="static/css/styles.css">
+  <link rel="icon" href="static/big.logo.png">
+
+</head>
+
+<body>
+  <div class="header">
+    <img class="logo" src="{{ url_for('static', filename = 'big.logo.png') }}" alt="Taste A Movie">
+    <span><strong>Taste A Movie</strong></span>
+    <hr>
+  </div>
+
+  <form action="{{ url_for('make_rec')}}" method="post">
+    <div class="sectionn">
+      <input type="text" name="movie_title" style="width:40%; border: 1px solid;">
+      <button class="btn" type="submit" name="button">SEARCH</button>
+      <p>
+        NOTE: Search movies along with the released year.
+      </p>
+    </div>
+  </form>
+  <h4 style="text-align:center; color:#354259"> Genres and their Top Movies</h4>
+  <div class="categories">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <a href="static/pages/War.html" color: "white;"><img src="{{ url_for('static', filename = './pages/images/war.jpg') }}" class="img-responsive" height="75%" width="80%" alt="WAR Image">
+
+          <h3>War</h3>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <a href="static/pages/Sci-fi.html"><img src="{{ url_for('static', filename = './pages/images/sci-fi.png') }}" class="img-responsive" height="75%" width="80%" alt="Science fiction Image">
+
+          <h3>Science Fiction</h3>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <a href="static/pages/Romance.html"><img src="{{ url_for('static', filename = './pages/images/romance.jpg') }}" class="img-responsive" height="75%" width="80%" alt="Romance">
+
+          <h3>Romance</h3>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <a href="static/pages/Drama.html"><img src="{{ url_for('static', filename = './pages/images/drama.jpg') }}" class="img-responsive" height="75%" width="80%" alt="Drama Image">
+
+          <h3>Drama</h3>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <a href="static/pages/Action.html"><img src="{{ url_for('static', filename = './pages/images/action.jpg') }}" class="img-responsive" height="75%" width="80%" alt="Action Image">
+          <h3>Action</h3>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <a href="static/pages/Comedy.html"><img src="{{ url_for('static', filename = './pages/images/comedy.webp') }}" class="img-responsive" height="75%" width="80%" alt="Comedy Image">
+          <h3>Comedy</h3>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+
+
+      <div class="col-lg-4 offset-lg-2 col-md-6 col-sm-12">
+        <a href="static/pages/Horror.html"><img src="{{ url_for('static', filename = './pages/images/horror.jpg') }}" class="img-responsive" height="75%" width="80%" alt="Horror Image">
+          <h3>Horror</h3>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <a href="static/pages/Animation.html"><img src="{{ url_for('static', filename = './pages/images/animation.jpg') }}" class="img-responsive" height="75%" width="80%" alt="Animation Image">
+          <h3>Animation</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
