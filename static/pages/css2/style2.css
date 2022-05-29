@@ -1,0 +1,35 @@
+body {
+  background-color: #F7ECDE;
+  color: #886F6F;
+}
+
+span {
+  font-family: 'Koulen', cursive;
+  font-weight: bold 500;
+  font-size: 50px;
+  padding: 20px 0 0 0;
+  color: black;
+}
+h3 {
+  text-align: center;
+}
+img {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.header {
+  background-color: #EF9F9F;
+  margin: auto;
+}
+
+.logo {
+  float: left;
+  left: 30px;
+  margin: 0 10px 0 0;
+}
+
+.moviess {
+  padding: 40px;
+  margin: auto;
+  text-align: center;
+}
